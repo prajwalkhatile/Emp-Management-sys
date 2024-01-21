@@ -35,7 +35,7 @@ const validateUpdateEmployee = [
 
 // Routes
 // Create Employee
-router.post("/employees", authenticate, validateCreateEmployee, createEmployee);
+router.post("/employees", validateCreateEmployee, createEmployee);
 
 // Read Employee
 router.get("/getemployees", authenticate, readEmployee);
